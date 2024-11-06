@@ -27,7 +27,8 @@ export default defineConfig({
     preprocessorOptions: {
       // 全局scss文件挂载
       scss: {
-        additionalData: '@import "@/assets/style/main.scss";',
+        additionalData: '@use "@/assets/style/main.scss" as *;',
+        api: "modern",
       },
     },
   },
